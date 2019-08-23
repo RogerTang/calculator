@@ -1,6 +1,6 @@
 # Rekols Calculator
 
-A powerful calculator, it is very beautiful and easy to use.
+A powerful calculator, it is beautiful and easy to use.
 
 Thank you very much [SpeedCrunch](https://bitbucket.org/heldercorreia/speedcrunch) project, this project used a lot of his code.
 
