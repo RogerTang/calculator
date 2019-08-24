@@ -18,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
     titleBar = new TitleBar();
     config = new DSettings();
     dialog = new DDialog(tr("Tips"), tr("Are you sure wanna clear the history?"), this);
-    histroyFilePath = config->configPath() + "/history.txt";
+    historyFilePath = config->configPath() + "/history.txt";
 
     layout->addWidget(simpleMode);
     layout->addWidget(scMode);
@@ -135,7 +135,7 @@ void MainWindow::initMenu()
 
 void MainWindow::loadHistory()
 {
-    QFile file(histroyFilePath);
+    QFile file(historyFilePath);
     QTextStream out(&file);
     if (file.open(QFile::ReadOnly)) {
         scMode->display->setPlainText(file.readAll());
@@ -189,7 +189,7 @@ void MainWindow::switchToDarkTheme()
 
 void MainWindow::closeEvent(QCloseEvent *)
 {
-    QFile file(histroyFilePath);
+    QFile file(historyFilePath);
 
     if (file.open(QFile::WriteOnly)) {
         QTextStream out(&file);
@@ -210,7 +210,7 @@ void MainWindow::clearHistory()
 void MainWindow::dialogButtonClicked(int index)
 {
     if (index == 1) {
-        QFile file(histroyFilePath);
+        QFile file(historyFilePath);
 
         if (file.open(QFile::WriteOnly)) {
             QTextStream out(&file);

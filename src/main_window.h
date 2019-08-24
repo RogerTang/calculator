@@ -51,7 +51,7 @@ private:
     void hideKeyBoard();
     void dialogButtonClicked(int);
 
-    QString histroyFilePath;
+    QString historyFilePath;
 
 protected:
     void closeEvent(QCloseEvent *);
