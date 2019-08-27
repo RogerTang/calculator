@@ -1,4 +1,4 @@
-#ifndef SETTTINGS_H
+#ifndef SETTINGS_H
 #define SETTTINGS_H
 
 #include <QObject>
@@ -17,4 +17,4 @@ public:
     void setOption(const QString &key, const QString &value);
 };
 
-#endif // SETTTINGS_H
+#endif // SETTINGS_H
