@@ -1,5 +1,5 @@
 #ifndef SETTINGS_H
-#define SETTTINGS_H
+#define SETTINGS_H
 
 #include <QObject>
 #include <QSettings>
